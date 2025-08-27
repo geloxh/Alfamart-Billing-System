@@ -96,7 +96,7 @@ class ShoppingCart {
             writer.write("------------- INVOICE -------------\n");
             for (int i = 0; i < items.size(); i++) {
                 Product item = items.get(i);
-                writer.write((i + 1) + ". " + item.getName() + "\t$" + item.getPrice() + "\tQty: " + item.getQuantity() + "\n");
+                writer.write((i + 1) + ". " + item.getName() + "\tPhp" + item.getPrice() + "\tQty: " + item.getQuantity() + "\n");
             }
             writer.write("-----------------------------------\n");
             writer.write("Total: Php" + calculateTotal() + "\n");
